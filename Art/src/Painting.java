@@ -8,17 +8,16 @@ public class Painting extends Canvas
 		{	
 			//head
 			g.setColor(Color.yellow);
-			g.fillOval(225, 200, 300, 300);
-			
+			g.fillOval(225, 190, 300, 300);			
 			//body
 			g.setColor(Color.black);
-			g.drawLine(375, 500, 375, 700);
+			g.drawLine(375, 490, 375, 690);
 			//legs
-			g.drawLine(375, 700, 300, 800);
-			g.drawLine(375, 700, 450, 800);
+			g.drawLine(375, 690, 290, 790);
+			g.drawLine(375, 690, 460, 790);
 			//arms
-			g.drawLine(375, 580, 300, 500);
-			g.drawLine(375, 580, 450, 500);
+			g.drawLine(375, 550, 290, 500);
+			g.drawLine(375, 550, 460, 500);
 			//eyes
 			g.fillOval(280, 270, 50, 50);
 			g.fillOval(420, 270, 50, 50);
@@ -26,12 +25,17 @@ public class Painting extends Canvas
 			g.fillOval(280, 272, 35, 35);
 			g.fillOval(420, 272, 35, 35);
 			//mouth
+			g.setColor(Color.PINK);
+			g.fillArc(300, 335, 150, 130, 0, -180);
+			//hat
 			g.setColor(Color.BLACK);
-			g.drawArc(45, 50, 50, 50, 225, 90);
-			g.drawLine(52, 92, 88, 92);
-//			g.setFont(new Font("Bold", Font.PLAIN, 20));
-//			g.setColor(Color.BLACK);
-//			g.drawString("Sup", 150, 50);
+			g.fillRect(250, 190, 250, 10);
+			g.fillRect(285, 20, 180, 170);
+			//teeth
+			g.setColor(Color.white);
+			g.fillRect(325, 400, 40, 40);
+			g.fillRect(385, 400, 40, 40);
+			
 		}
 		
 		
